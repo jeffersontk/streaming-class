@@ -1,0 +1,13 @@
+ query GetLessons {
+  lessons(orderBy: availableAt_ASC, stage: PUBLISHED) {
+    id
+    channel
+    description
+    slug
+    tag
+    title
+    typeClass
+    videoId
+    availableAt
+  }
+}
